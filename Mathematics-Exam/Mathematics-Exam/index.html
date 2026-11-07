@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="65-question Ethiopian University Entrance Examination Mathematics model exam.">
+<title>Mathematics Model Examination | Mr. Yiheys Walle</title>
+<style>
+:root{--navy:#10233f;--blue:#2457c5;--blue2:#3977ed;--ink:#17243a;--muted:#65748b;--line:#e1e7f0;--bg:#f3f6fb;--green:#13804a;--red:#c43b45;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.55}
+.topbar{background:linear-gradient(110deg,#10233f,#1c478e);color:white;padding:18px 24px}
+.topinner{max-width:1050px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:800;letter-spacing:.2px}.brand small{display:block;font-weight:500;opacity:.75;font-size:12px}
+.wrap{max-width:960px;margin:34px auto;padding:0 18px}
+.hero{background:linear-gradient(135deg,#10233f 0%,#214e9a 65%,#3977ed 100%);color:white;border-radius:24px;padding:42px;box-shadow:0 18px 45px #17345d25;overflow:hidden;position:relative}
+.hero:after{content:"∑";position:absolute;right:36px;top:-38px;font-size:210px;font-weight:800;color:#ffffff12}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800;color:#c9dcff}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:12px 0}
+.hero p{max-width:620px;color:#e1eaff;font-size:16px}
+.prepared{font-weight:700;margin-top:22px;color:#fff}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px;max-width:650px}
+.stat{background:#ffffff17;border:1px solid #ffffff2a;border-radius:14px;padding:14px}
+.stat strong{display:block;font-size:22px}.stat span{font-size:12px;color:#d9e6ff}
+.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;margin-top:20px;box-shadow:0 8px 24px #10233f08}
+.panel h2{margin:0 0 12px;font-size:20px}
+.instructions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tip{padding:13px;background:#f7f9fd;border-radius:12px;color:#53627a;font-size:14px}
+button{font:inherit;cursor:pointer;border:0;border-radius:12px;padding:13px 20px;font-weight:750;transition:.15s}
+.primary{background:var(--blue);color:white;box-shadow:0 7px 16px #2457c533}.primary:hover{background:#1946a7;transform:translateY(-1px)}
+.secondary{background:#edf2fa;color:#29405f}.danger{background:#fff0f0;color:#a92c35}
+.startrow{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:22px}
+footer{text-align:center;color:#8390a4;font-size:12px;padding:30px 10px}
+.hidden{display:none!important}
+.examhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.pill{border-radius:99px;background:#eaf0fb;color:#234a91;padding:8px 13px;font-weight:750;font-size:13px}
+.timer{background:#fff4e8;color:#9a5310}.timer.urgent{background:#ffe7e7;color:#b4232d}
+.progressbox{height:8px;background:#e8edf5;border-radius:20px;overflow:hidden;margin:12px 0 22px}
+.progressbar{height:100%;width:0;background:linear-gradient(90deg,#2457c5,#54a2ff);transition:width .2s}
+.qmeta{color:var(--muted);font-size:13px;font-weight:700}
+.question{font-size:clamp(19px,2.7vw,24px);font-weight:750;line-height:1.45;margin:12px 0 24px;white-space:pre-wrap}
+.options{display:grid;gap:12px}
+.option{display:flex;align-items:flex-start;gap:13px;border:1.5px solid var(--line);padding:15px;border-radius:13px;cursor:pointer;transition:.15s;background:#fff}
+.option:hover{border-color:#9bb5e9;background:#f8faff}
+.option.selected{border-color:var(--blue);background:#eff4ff}
+.option input{margin-top:4px;accent-color:var(--blue);width:18px;height:18px;flex:0 0 auto}
+.opttext{font-size:16px}
+.navrow{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:25px;flex-wrap:wrap}
+.navright{display:flex;gap:9px}
+.smallnote{font-size:12px;color:var(--muted)}
+.jumpgrid{display:grid;grid-template-columns:repeat(13,1fr);gap:6px;margin-top:14px}
+.jump{padding:8px 0;border-radius:8px;background:#f0f3f8;color:#5b6880;font-size:12px}
+.jump.done{background:#dce8ff;color:#17469e}.jump.current{outline:2px solid var(--blue);background:#eaf1ff}
+.submitwide{background:#13804a;color:#fff}
+.resultscore{font-size:42px;font-weight:850;color:#163f86}
+.resultgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.resultbox{background:#f5f8fc;padding:15px;border-radius:12px}
+.reviewitem{border:1px solid var(--line);border-left:5px solid #cbd5e1;border-radius:12px;padding:16px;margin:12px 0;background:white}
+.reviewitem.correct{border-left-color:var(--green)}.reviewitem.wrong{border-left-color:var(--red)}
+.reviewitem h3{font-size:15px;margin:0 0 9px}.reviewline{font-size:14px;margin:5px 0}
+.good{color:var(--green);font-weight:750}.bad{color:var(--red);font-weight:750}
+.explanation{background:#f5f8fc;border-radius:10px;padding:12px;margin-top:10px;font-size:14px}
+@media(max-width:650px){.hero{padding:28px 22px}.stats{grid-template-columns:1fr}.instructions{grid-template-columns:1fr}.resultgrid{grid-template-columns:1fr}.jumpgrid{grid-template-columns:repeat(8,1fr)}.wrap{margin:20px auto}.startrow{align-items:stretch;flex-direction:column}.startrow button{width:100%}}
+@media print{.topbar,button,.jumpgrid,.navrow{display:none!important}body{background:white}.wrap{max-width:100%;margin:0}.panel{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topinner"><div class="brand">MW <small>MATHEMATICS • MODEL EXAM</small></div><div style="font-size:13px;opacity:.85">Ethiopian UEE Practice</div></div></header>
+<main class="wrap">
+<section id="home">
+ <div class="hero">
+  <div class="eyebrow">Ethiopian University Entrance Examination</div>
+  <h1>Mathematics<br>Model Examination</h1>
+  <p>Challenge your mathematical reasoning with 65 multiple-choice questions based on the Ethiopian new-curriculum Mathematics topics for Grades 9, 10 and 11.</p>
+  <div class="prepared">Prepared by Mr. Yiheys Walle</div>
+  <div class="stats">
+   <div class="stat"><strong>65</strong><span>Questions</span></div>
+   <div class="stat"><strong>2:30</strong><span>Hours allowed</span></div>
+   <div class="stat"><strong>65</strong><span>Total marks</span></div>
+  </div>
+ </div>
+ <div class="panel">
+  <h2>Examination instructions</h2>
+  <div class="instructions">
+   <div class="tip"> <b>One question at a time</b><br>Choose one answer from four radio-button options.</div>
+   <div class="tip"><b>Move freely</b><br>Use Previous and Next, or jump to any question.</div>
+   <div class="tip"><b>Time limit</b><br>The 2-hour-30-minute timer starts when you begin. The exam submits automatically when time expires.</div>
+   <div class="tip"><b>Results and feedback</b><br>After submission, see your score, correct answers, and explanations for missed questions.</div>
+  </div>
+  <div class="startrow"><div class="smallnote">Your answers stay in this browser while you take the exam. Avoid refreshing or closing the page.</div><button class="primary" id="startBtn">Start examination →</button></div>
+ </div>
+</section>
+
+<section id="exam" class="hidden">
+ <div class="examhead">
+  <span class="pill" id="counter">Question 1 of 65</span>
+  <span class="pill timer" id="timer">Time remaining: 02:30:00</span>
+ </div>
+ <div class="progressbox"><div class="progressbar" id="progress"></div></div>
+ <div class="panel">
+  <div class="qmeta" id="qmeta">MATHEMATICS • QUESTION 1</div>
+  <div class="question" id="questionText"></div>
+  <div class="options" id="options"></div>
+  <div class="navrow">
+   <button class="secondary" id="prevBtn">← Previous</button>
+   <div class="navright"><button class="secondary" id="nextBtn">Next →</button><button class="submitwide" id="submitBtn">Submit exam</button></div>
+  </div>
+ </div>
+ <div class="panel">
+  <h2>Question navigator</h2>
+  <div class="smallnote">Blue numbers are answered. The outlined number is the question currently displayed.</div>
+  <div class="jumpgrid" id="jumpgrid"></div>
+ </div>
+</section>
+
+<section id="results" class="hidden">
+ <div class="panel">
+  <div class="eyebrow" style="color:#2457c5">Examination completed</div>
+  <h1 style="font-size:32px;margin:8px 0">Your result</h1>
+  <div class="resultscore" id="score">0 / 65</div>
+  <div id="remark" style="font-weight:700;margin:4px 0 18px"></div>
+  <div class="resultgrid">
+   <div class="resultbox"><div class="smallnote">Correct answers</div><strong id="correctCount">0</strong></div>
+   <div class="resultbox"><div class="smallnote">Incorrect answers</div><strong id="wrongCount">0</strong></div>
+   <div class="resultbox"><div class="smallnote">Unanswered</div><strong id="blankCount">0</strong></div>
+  </div>
+  <p class="smallnote" id="timeUsed"></p>
+  <div class="startrow"><button class="primary" id="retryBtn">Retake examination</button><button class="secondary" onclick="window.print()">Print results</button></div>
+ </div>
+ <div class="panel">
+  <h2>Answer review</h2>
+  <p class="smallnote">Correct answers are marked green. Incorrect and unanswered questions show the correct option and an explanation.</p>
+  <div id="review"></div>
+ </div>
+</section>
+</main>
+<footer>Mathematics Model Examination • Prepared by Mr. Yiheys Walle</footer>
+<script>
+const QUESTIONS = [{"q": "In a school of 80 students, 45 study Mathematics, 38 study Physics, and 12 study neither subject. What is the number of students who study both subjects?", "opts": ["12", "15", "18", "20"], "ans": 1, "why": "The number studying at least one subject is 80 − 12 = 68. By inclusion–exclusion, 45 + 38 − n(A∩B) = 68, so the intersection is 15."}, {"q": "If log₃(x−1) + log₃(x+1) = 2, what is the positive value of x?", "opts": ["√8", "√10", "4", "5"], "ans": 1, "why": "The domain requires x > 1. Combine the logarithms: log₃(x²−1)=2, so x²−1=9. Thus x²=10 and the positive solution is √10."}, {"q": "Given a = (k, 2, −1) and b = (2, −1, 4), what value of k makes the vectors perpendicular?", "opts": ["1", "2", "3", "4"], "ans": 2, "why": "Perpendicular vectors have zero dot product: 2k + 2(−1) + (−1)(4)=0. Hence 2k−6=0 and k=3."}, {"q": "A quadratic polynomial has roots whose sum is 6 and whose difference is 2. What is the constant term of the monic polynomial?", "opts": ["6", "8", "10", "12"], "ans": 1, "why": "The roots are 4 and 2 because their sum is 6 and difference is 2. Their product is 8. For a monic quadratic, the constant term is the product of the roots."}, {"q": "Which line is tangent to the circle x² + y² = 25?", "opts": ["3x + 4y = 15", "3x + 4y = 20", "3x + 4y = 24", "3x + 4y = 25"], "ans": 3, "why": "The circle has centre (0,0) and radius 5. The distance from the centre to 3x+4y=c is |c|/√(3²+4²)=|c|/5. Tangency requires this distance to equal 5, so |c|=25."}, {"q": "If sin θ = −8/17 and θ lies in the fourth quadrant, what is cos θ?", "opts": ["−15/17", "15/17", "−8/17", "8/17"], "ans": 1, "why": "Using sin²θ+cos²θ=1 gives cos²θ=1−64/289=225/289. In quadrant IV, cosine is positive, so cosθ=15/17."}, {"q": "Given A=[[1,2],[3,4]] and B=[[2,0],[1,3]], what is AB?", "opts": ["[[4,6],[10,12]]", "[[2,0],[3,12]]", "[[4,3],[10,6]]", "[[3,6],[7,12]]"], "ans": 0, "why": "Multiply rows of A by columns of B: AB=[[1·2+2·1, 1·0+2·3],[3·2+4·1, 3·0+4·3]]=[[4,6],[10,12]]."}, {"q": "What is the solution set of (x−2)/(x+3) ≤ 0?", "opts": ["(−∞,−3) ∪ [2,∞)", "(−3,2]", "[−3,2]", "(−∞,2]"], "ans": 1, "why": "Critical values are −3 and 2. The expression is negative between them; x=2 is allowed because it makes the numerator zero, while x=−3 is excluded because the denominator is zero. Answer: (−3,2]."}, {"q": "Two similar triangles have corresponding sides in the ratio 4:7. What is the ratio of their areas?", "opts": ["4:7", "8:14", "16:49", "64:343"], "ans": 2, "why": "For similar figures, area scales as the square of the corresponding length ratio. Thus the area ratio is 4²:7² = 16:49."}, {"q": "Two fair dice are rolled. Given that their sum is even, what is the probability that both dice show an even number?", "opts": ["1/3", "1/2", "2/3", "5/6"], "ans": 1, "why": "An even sum occurs when both results are even or both are odd. There are 9 even-even outcomes and 9 odd-odd outcomes, so 9 of the 18 eligible outcomes are even-even. Probability = 1/2."}, {"q": "If f(x)=(2x−5)/(x+3), what is f⁻¹(x)?", "opts": ["(5+3x)/(2−x)", "(5−3x)/(2+x)", "(3x−5)/(x+2)", "(2x+5)/(3−x)"], "ans": 0, "why": "Set y=(2x−5)/(x+3). Then yx+3y=2x−5, so x(y−2)=−5−3y. Therefore x=(5+3y)/(2−y), giving f⁻¹(x)=(5+3x)/(2−x)."}, {"q": "Group A has 12 students with an average score of 65, while Group B has 18 students with an average score of 75. What is the combined average?", "opts": ["69", "70", "71", "72"], "ans": 2, "why": "The combined mean is the weighted mean: (12×65 + 18×75)/(12+18) = (780+1350)/30 = 71."}, {"q": "Each exterior angle of a regular polygon is 18°. What is the number of its diagonals?", "opts": ["150", "160", "170", "180"], "ans": 2, "why": "A regular polygon has 360°/18°=20 sides. Its diagonals number n(n−3)/2 = 20×17/2 = 170."}, {"q": "What is the simplified form of (x²−16)/(x²−4x), with all restrictions respected?", "opts": ["(x+4)/x, x≠0,4", "(x−4)/x, x≠0", "(x+4)/(x−4), x≠4", "(x−4)/(x+4), x≠0"], "ans": 0, "why": "Factor: [(x−4)(x+4)]/[x(x−4)]. Cancel x−4, but retain the original restrictions x≠0 and x≠4. The result is (x+4)/x."}, {"q": "What is the value of x satisfying 4^(x+1)=8^(2x−1)?", "opts": ["1/2", "1", "5/4", "2"], "ans": 2, "why": "Write both sides in base 2: 2^(2x+2)=2^(6x−3). Equate exponents: 2x+2=6x−3, so 5=4x and x=5/4."}, {"q": "What is the determinant of [[2,1,0],[1,2,1],[0,1,2]]?", "opts": ["2", "3", "4", "6"], "ans": 2, "why": "Expanding along the first row gives 2(4−1)−1(2−0)=6−2=4."}, {"q": "If A={1,2,3,4,5} and B={2,4,6}, what is the symmetric difference A△B?", "opts": ["{2,4}", "{1,3,5,6}", "{1,2,3,4,5,6}", "{1,3,5}"], "ans": 1, "why": "The symmetric difference contains elements belonging to exactly one of the sets. A−B={1,3,5} and B−A={6}; their union is {1,3,5,6}."}, {"q": "What is the distance between P(−2,3) and Q(4,−5)?", "opts": ["8", "9", "10", "12"], "ans": 2, "why": "The distance is √[(4−(−2))²+(−5−3)²] = √(36+64)=√100=10."}, {"q": "What are all solutions of 2cos²x−1=0 in 0≤x<2π?", "opts": ["π/4, 3π/4", "π/4, 3π/4, 5π/4, 7π/4", "π/6, 5π/6", "π/3, 2π/3, 4π/3"], "ans": 1, "why": "The equation gives cos²x=1/2, so cosx=±√2/2. In one full revolution, the four angles are π/4, 3π/4, 5π/4 and 7π/4."}, {"q": "If the radius of a sphere is doubled, what happens to its surface area?", "opts": ["It doubles", "It triples", "It becomes four times as large", "It becomes eight times as large"], "ans": 2, "why": "Sphere surface area is 4πr². Replacing r by 2r gives 4π(2r)²=4(4πr²), so the area is multiplied by 4."}, {"q": "A relation on the integers is defined by aRb iff a−b is divisible by 5. Which statement is correct?", "opts": ["Reflexive and symmetric only", "Symmetric and transitive only", "Reflexive, symmetric and transitive", "Neither symmetric nor transitive"], "ans": 2, "why": "Every integer differs from itself by 0, which is divisible by 5 (reflexive). If 5 divides a−b, it divides b−a (symmetric). If it divides a−b and b−c, it divides a−c (transitive)."}, {"q": "Given a=(4,3) and b=(0,2), what is the scalar projection of a onto b?", "opts": ["2", "3", "4", "6"], "ans": 1, "why": "Scalar projection is (a·b)/|b|. Here a·b=4·0+3·2=6 and |b|=2, so the scalar projection is 3. Note: option B is 3."}, {"q": "What is the solution set of |2x−1|=7?", "opts": ["{−4,3}", "{−3,4}", "{−3,3}", "{−4,4}"], "ans": 1, "why": "Split into 2x−1=7 or 2x−1=−7. These give x=4 and x=−3, so the solution set is {−3,4}."}, {"q": "A chord of a circle with radius 10 cm is 6 cm from the centre. What is the chord length?", "opts": ["12 cm", "14 cm", "16 cm", "18 cm"], "ans": 2, "why": "The perpendicular from the centre bisects the chord. Half the chord is √(10²−6²)=√64=8 cm, so the full chord is 16 cm."}, {"q": "If A is a 3×3 matrix with det(A)=−3, what is det(B) when B=2Aᵀ?", "opts": ["−6", "−12", "−18", "−24"], "ans": 3, "why": "For a 3×3 matrix, det(2Aᵀ)=2³det(Aᵀ). Since det(Aᵀ)=det(A), the result is 8(−3)=−24."}, {"q": "What is the population variance of 1, 3, 5, 7?", "opts": ["2", "4", "5", "6"], "ans": 2, "why": "The mean is 4. Squared deviations are 9,1,1,9, whose sum is 20. Population variance =20/4=5."}, {"q": "If f(x)=√(x−1) and g(x)=x²+2x, what is the domain of g∘f?", "opts": ["x>1", "x≥1", "x≤1", "All real numbers"], "ans": 1, "why": "The composite is g(f(x))=(√(x−1))²+2√(x−1). The square root requires x−1≥0, so the domain is x≥1."}, {"q": "Given a=(3,2) and b=(1,4), what is the area of the parallelogram they form?", "opts": ["8", "10", "12", "14"], "ans": 1, "why": "The area is the absolute value of the 2D determinant: |3·4−2·1|=|12−2|=10 square units."}, {"q": "What is the solution set of (x+1)/(x−2)>0?", "opts": ["(−1,2)", "(−∞,−1)∪(2,∞)", "(−∞,2)", "(−1,∞)"], "ans": 1, "why": "The critical values are −1 and 2. The quotient is positive when numerator and denominator have the same sign: x<−1 or x>2. The endpoints are excluded."}, {"q": "The sum of the interior angles of a polygon is 2340°. How many sides does it have?", "opts": ["13", "14", "15", "16"], "ans": 2, "why": "Use (n−2)180°=2340°. Then n−2=13 and n=15."}, {"q": "P(x)=x³−2x²+ax+4. If the remainder on division by x−2 is 10, what is a?", "opts": ["2", "3", "4", "5"], "ans": 1, "why": "By the remainder theorem, P(2)=10. Thus 8−8+2a+4=10, so 2a=6 and a=3."}, {"q": "What is the image of (3,−2) after a 90° clockwise rotation about the origin?", "opts": ["(2,3)", "(−2,−3)", "(−3,2)", "(2,−3)"], "ans": 1, "why": "A 90° clockwise rotation maps (x,y) to (y,−x). Thus (3,−2) maps to (−2,−3)."}, {"q": "A bag contains 4 red balls and 5 blue balls. Two balls are selected without replacement. What is the probability that both are blue?", "opts": ["5/18", "5/16", "4/9", "5/9"], "ans": 0, "why": "The probability is (5/9)(4/8)=20/72=5/18."}, {"q": "A cone has radius 6 cm and perpendicular height 8 cm. What is its volume?", "opts": ["48π cm³", "72π cm³", "96π cm³", "144π cm³"], "ans": 2, "why": "Cone volume is (1/3)πr²h=(1/3)π(36)(8)=96π cm³."}, {"q": "What is the positive solution of log₂(x−2)+log₂(x+2)=4?", "opts": ["2√3", "2√5", "4", "5"], "ans": 1, "why": "The domain is x>2. Combine logs: log₂(x²−4)=4, so x²−4=16, x²=20. The positive solution is 2√5."}, {"q": "If A and B are acute, sinA=5/13 and cosB=3/5. What is cos(A+B)?", "opts": ["16/65", "−16/65", "36/65", "−36/65"], "ans": 0, "why": "Since A is acute, cosA=12/13. Since B is acute, sinB=4/5. Then cos(A+B)=cosAcosB−sinAsinB=(12/13)(3/5)−(5/13)(4/5)=16/65."}, {"q": "Three sets have n(A)=25, n(B)=22, n(C)=20, n(A∩B)=10, n(A∩C)=8, n(B∩C)=7 and n(A∩B∩C)=4. What is n(A∪B∪C)?", "opts": ["42", "44", "46", "48"], "ans": 2, "why": "By inclusion–exclusion: 25+22+20−10−8−7+4=46."}, {"q": "Which relation represents a function from ℝ to ℝ?", "opts": ["x=y²", "y²=x+1", "y=x²+3x", "x²+y²=9"], "ans": 2, "why": "A function from ℝ to ℝ must assign exactly one real output to every real input. y=x²+3x does this. The other relations either give multiple/no y-values for some x."}, {"q": "What is x if 9^(x−1)=27^(2x−3)?", "opts": ["5/4", "3/2", "7/4", "2"], "ans": 2, "why": "Write both sides with base 3: 3^(2x−2)=3^(6x−9). Equate exponents: 2x−2=6x−9, so 7=4x and x=7/4."}, {"q": "What is the slope of a line perpendicular to the line through (1,2) and (5,10)?", "opts": ["2", "−2", "1/2", "−1/2"], "ans": 3, "why": "The given slope is (10−2)/(5−1)=2. A perpendicular line has slope equal to the negative reciprocal, −1/2."}, {"q": "What is the inverse of [[4,1],[2,1]]?", "opts": ["(1/2)[[1,−1],[−2,4]]", "(1/2)[[1,1],[2,4]]", "[[1,−1],[−2,4]]", "(1/2)[[4,−1],[−2,1]]"], "ans": 0, "why": "The determinant is 4·1−1·2=2. The inverse is (1/2)[[1,−1],[−2,4]]."}, {"q": "Given a=(1,2,2) and b=(2,1,2), what is the cosine of the angle between them?", "opts": ["7/9", "8/9", "2/3", "1/3"], "ans": 1, "why": "The dot product is 2+2+4=8. Each vector has magnitude 3, so cosθ=(a·b)/(|a||b|)=8/9."}, {"q": "What is the median of 2, 4, 4, 6, 9?", "opts": ["3", "4", "5", "6"], "ans": 1, "why": "The data are already ordered. The middle (third) value of the five observations is 4."}, {"q": "A point (2,−1) is reflected across y=x and then translated by (3,0). What are its final coordinates?", "opts": ["(2,2)", "(3,2)", "(2,−2)", "(−1,5)"], "ans": 0, "why": "Reflection across y=x swaps coordinates: (2,−1)→(−1,2). Translation by (3,0) gives (2,2)."}, {"q": "Which equation represents a circle with centre (2,−3) and radius 5?", "opts": ["x²+y²−4x+6y−12=0", "x²+y²+4x−6y−12=0", "x²+y²−4x−6y+12=0", "x²+y²+4x+6y−12=0"], "ans": 0, "why": "The standard equation is (x−2)²+(y+3)²=25. Expanding gives x²+y²−4x+6y−12=0."}, {"q": "For f(x)=(2x+1)/(x−3), what are its vertical and horizontal asymptotes?", "opts": ["x=−3, y=2", "x=3, y=2", "x=3, y=−2", "x=−3, y=−2"], "ans": 1, "why": "The denominator is zero at x=3, giving the vertical asymptote. Since numerator and denominator have equal degree, the horizontal asymptote is the ratio of leading coefficients, y=2."}, {"q": "Which condition is sufficient to prove congruence of two right-angled triangles?", "opts": ["Equal corresponding acute angles only", "Equal hypotenuse and one corresponding leg", "Equal areas only", "Equal perimeters only"], "ans": 1, "why": "For right triangles, equality of the hypotenuse and one corresponding leg (HL/RHS criterion) is sufficient for congruence."}, {"q": "What is the solution set of |x−2|<3?", "opts": ["−1<x<5", "−5<x<1", "x<−1 or x>5", "−1≤x≤5"], "ans": 0, "why": "An absolute-value inequality |x−2|<3 means −3<x−2<3. Adding 2 throughout gives −1<x<5."}, {"q": "What is the determinant of [[1,2,1],[0,1,3],[2,0,1]]?", "opts": ["7", "9", "11", "13"], "ans": 2, "why": "Expanding along the first row: 1(1·1−3·0)−2(0·1−3·2)+1(0·0−1·2)=1+12−2=11."}, {"q": "Two fair dice are rolled. Given that the first die shows an odd number, what is the probability that the sum is 9?", "opts": ["1/12", "1/9", "1/6", "2/9"], "ans": 1, "why": "There are 18 equally likely outcomes with an odd first die. The favourable outcomes are (3,6) and (5,4), so the probability is 2/18=1/9."}, {"q": "P(x)=x³+kx²−4x−12 has x=−2 as a root. What is k?", "opts": ["1", "2", "3", "4"], "ans": 2, "why": "Since −2 is a root, P(−2)=0: −8+4k+8−12=0. Thus 4k−12=0 and k=3."}, {"q": "Which function is both one-to-one and onto when its domain and codomain are ℝ?", "opts": ["f(x)=x²", "f(x)=x³+x", "f(x)=eˣ", "f(x)=|x|"], "ans": 1, "why": "The function x³+x is strictly increasing because its derivative 3x²+1 is always positive, and its limits extend from −∞ to +∞. Therefore it is injective and surjective on ℝ."}, {"q": "Given a=(3,4) and b=(−1,2), what is the magnitude of a+b?", "opts": ["2√5", "2√10", "4√2", "2√13"], "ans": 1, "why": "The resultant is (3−1,4+2)=(2,6). Its magnitude is √(2²+6²)=√40=2√10."}, {"q": "A data set has mean 5. Every observation is multiplied by 3 and then increased by 2. What is the new mean?", "opts": ["15", "16", "17", "18"], "ans": 2, "why": "A linear transformation x→3x+2 transforms the mean in the same way: new mean=3(5)+2=17."}, {"q": "What is the number of diagonals in a 12-sided polygon?", "opts": ["48", "50", "54", "60"], "ans": 2, "why": "The number of diagonals is n(n−3)/2. For n=12, this is 12×9/2=54."}, {"q": "A closed cylinder has radius 2 cm and height 5 cm. What is its total surface area?", "opts": ["20π cm²", "24π cm²", "28π cm²", "32π cm²"], "ans": 2, "why": "Total surface area of a closed cylinder is 2πr²+2πrh. Substituting r=2 and h=5 gives 8π+20π=28π cm²."}, {"q": "In a right triangle, tanθ=3/4 and θ is acute. What is sinθ?", "opts": ["3/5", "4/5", "3/4", "5/4"], "ans": 0, "why": "If opposite:adjacent=3:4, the hypotenuse is 5 by the 3–4–5 triangle. Therefore sinθ=opposite/hypotenuse=3/5."}, {"q": "If A is a 2×2 matrix and det(A)=5, what is det(3A)?", "opts": ["15", "30", "45", "90"], "ans": 2, "why": "For an n×n matrix, det(kA)=kⁿdet(A). Here n=2, so det(3A)=3²×5=45."}, {"q": "What is the image of (4,−3) after reflection across y=x?", "opts": ["(4,3)", "(−3,4)", "(3,−4)", "(−4,3)"], "ans": 1, "why": "Reflection across y=x swaps the coordinates. Thus (4,−3) maps to (−3,4)."}, {"q": "A fair die is rolled twice. What is the probability that the product of the two outcomes is even?", "opts": ["1/4", "1/2", "3/4", "5/6"], "ans": 2, "why": "The product is odd only if both rolls are odd. That probability is (3/6)(3/6)=1/4. Therefore the product is even with probability 1−1/4=3/4."}, {"q": "What is the domain of f(x)=(x+2)/(x²−5x+6)?", "opts": ["ℝ\\{2,3}", "ℝ\\{−2,3}", "ℝ\\{1,2}", "All real numbers"], "ans": 0, "why": "The denominator factors as (x−2)(x−3). It cannot be zero, so x≠2 and x≠3."}, {"q": "Given a=(2,3) and b=(4,−1), what is the nature of the angle between the vectors?", "opts": ["Acute", "Obtuse", "Right angle", "Straight angle"], "ans": 0, "why": "Their dot product is 2·4+3(−1)=5, which is positive. A positive dot product means the angle is acute."}, {"q": "What is the fundamental period of f(x)=4cos(3x)+2sin(2x)?", "opts": ["π", "2π", "2π/3", "4π"], "ans": 1, "why": "The component periods are 2π/3 and π. The least positive common period is 2π."}, {"q": "A frequency distribution has values 2, 4, 6 with frequencies 3, 2, 5 respectively. What is the arithmetic mean?", "opts": ["4", "4.2", "4.4", "4.6"], "ans": 2, "why": "The weighted mean is (2·3+4·2+6·5)/(3+2+5)=(6+8+30)/10=4.4."}, {"q": "A reflection across the x-axis is followed by a reflection across the y-axis. What single transformation is equivalent?", "opts": ["Reflection across y=x", "Reflection across y=−x", "Rotation of 90° anticlockwise", "Rotation of 180° about the origin"], "ans": 3, "why": "The two reflections map (x,y)→(x,−y)→(−x,−y), which is exactly a 180° rotation about the origin."}];
+const TOTAL_SECONDS = 150 * 60;
+let current = 0, answers = Array(QUESTIONS.length).fill(null), remaining = TOTAL_SECONDS;
+let ticker = null, startedAt = null, submitted = false;
+const $ = id => document.getElementById(id);
+function show(id){["home","exam","results"].forEach(x=>$(x).classList.toggle("hidden",x!==id));window.scrollTo({top:0,behavior:"smooth"});}
+function start(){
+ current=0; answers=Array(QUESTIONS.length).fill(null); remaining=TOTAL_SECONDS; submitted=false; startedAt=Date.now();
+ show("exam"); render(); updateTimer();
+ clearInterval(ticker); ticker=setInterval(()=>{remaining--;updateTimer();if(remaining<=0) finish(true);},1000);
+}
+function updateTimer(){
+ const h=Math.floor(remaining/3600),m=Math.floor((remaining%3600)/60),s=remaining%60;
+ $("timer").textContent=`Time remaining: ${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
+ $("timer").classList.toggle("urgent",remaining<=10*60);
+}
+function render(){
+ const item=QUESTIONS[current];
+ $("counter").textContent=`Question ${current+1} of ${QUESTIONS.length}`;
+ $("qmeta").textContent=`MATHEMATICS • QUESTION ${current+1}`;
+ $("questionText").textContent=item.q;
+ $("options").innerHTML="";
+ item.opts.forEach((opt,i)=>{
+  const label=document.createElement("label");label.className="option"+(answers[current]===i?" selected":"");
+  const input=document.createElement("input");input.type="radio";input.name="answer";input.value=i;input.checked=answers[current]===i;
+  input.addEventListener("change",()=>{answers[current]=i;render();});
+  const span=document.createElement("span");span.className="opttext";span.textContent=String.fromCharCode(65+i)+". "+opt;
+  label.append(input,span);$("options").append(label);
+ });
+ $("prevBtn").disabled=current===0;$("prevBtn").style.opacity=current===0?".45":"1";
+ $("nextBtn").disabled=current===QUESTIONS.length-1;$("nextBtn").style.opacity=current===QUESTIONS.length-1?".45":"1";
+ $("progress").style.width=(answers.filter(x=>x!==null).length/QUESTIONS.length*100)+"%";
+ $("jumpgrid").innerHTML="";
+ QUESTIONS.forEach((_,i)=>{const b=document.createElement("button");b.className="jump"+(answers[i]!==null?" done":"")+(i===current?" current":"");b.textContent=i+1;b.addEventListener("click",()=>{current=i;render();});$("jumpgrid").append(b);});
+}
+function finish(auto=false){
+ if(submitted)return;
+ const unanswered=answers.filter(a=>a===null).length;
+ if(!auto && !confirm(`Submit your examination now? ${unanswered} question(s) are unanswered.`))return;
+ submitted=true;clearInterval(ticker);
+ let correct=0;
+ QUESTIONS.forEach((q,i)=>{if(answers[i]===q.ans)correct++;});
+ const wrong=answers.filter((a,i)=>a!==null&&a!==QUESTIONS[i].ans).length;
+ $("score").textContent=`${correct} / ${QUESTIONS.length}`;
+ $("correctCount").textContent=correct;$("wrongCount").textContent=wrong;$("blankCount").textContent=unanswered;
+ $("remark").textContent=correct>=58?"Excellent performance!":correct>=50?"Very good performance.":correct>=42?"Good effort. Review the missed questions.":correct>=33?"Fair result. More practice will help.":"Keep practising and strengthen the fundamentals.";
+ const elapsed=TOTAL_SECONDS-remaining;
+ $("timeUsed").textContent=`Time used: ${Math.floor(elapsed/3600)}h ${Math.floor((elapsed%3600)/60)}m ${elapsed%60}s`+(auto?" • Automatically submitted when time expired.":"");
+ $("review").innerHTML="";
+ QUESTIONS.forEach((q,i)=>{
+  const isCorrect=answers[i]===q.ans;
+  const card=document.createElement("article");card.className="reviewitem "+(isCorrect?"correct":"wrong");
+  const title=document.createElement("h3");title.textContent=`Question ${i+1}. ${q.q}`;
+  const chosen=document.createElement("div");chosen.className="reviewline";
+  chosen.textContent=answers[i]===null?"Your answer: Not answered":`Your answer: ${String.fromCharCode(65+answers[i])}. ${q.opts[answers[i]]}`;
+  chosen.classList.add(isCorrect?"good":"bad");
+  card.append(title,chosen);
+  if(!isCorrect){
+   const right=document.createElement("div");right.className="reviewline good";right.textContent=`Correct answer: ${String.fromCharCode(65+q.ans)}. ${q.opts[q.ans]}`;
+   const explanation=document.createElement("div");explanation.className="explanation";explanation.textContent="Explanation: "+q.why;
+   card.append(right,explanation);
+  } else {
+   const right=document.createElement("div");right.className="reviewline good";right.textContent="✓ Correct";card.append(right);
+  }
+  $("review").append(card);
+ });
+ show("results");
+}
+$("startBtn").addEventListener("click",start);
+$("prevBtn").addEventListener("click",()=>{if(current>0){current--;render();}});
+$("nextBtn").addEventListener("click",()=>{if(current<QUESTIONS.length-1){current++;render();}});
+$("submitBtn").addEventListener("click",()=>finish(false));
+$("retryBtn").addEventListener("click",start);
+</script>
+</body>
+</html>
